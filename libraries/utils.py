@@ -1,3 +1,6 @@
+from typing import List
+
+
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
@@ -7,7 +10,7 @@ class ListNode:
         return str(self.val)
 
 
-def generateListNode(nodeValues):
+def generateListNode(nodeValues: List):
     if not nodeValues:
         return None
     l1 = ListNode(nodeValues.pop(0))
